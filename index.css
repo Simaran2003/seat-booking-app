@@ -1,0 +1,96 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #3676b6;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+  }
+  
+  #auth-container, #seat-booking-container {
+    width: 100%;
+    max-width: 400px;
+    background: #684545;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  input, button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #b93333;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: rgb(35, 25, 25);
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  #seats-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .seat {
+    padding: 15px;
+    background-color: #db4b4b;
+    border: 1px solid #bf4444;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .seat.selected {
+    background-color: #4caf50;
+    color: rgb(179, 62, 62);
+  }
+  
+  .seat.disabled {
+    background-color: #1f9731;
+    cursor: not-allowed;
+  }
+  
+  #numTickets {
+    margin-top: 20px;
+  }
+  
+  #confirmationMessage {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #28a745;
+  }
+  
+  
